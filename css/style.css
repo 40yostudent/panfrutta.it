@@ -1,0 +1,248 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: auto;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: auto;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  height: auto;
+  min-width: 100%;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+  #myCarousel {
+    margin-top: 50px;
+  }
+  .carousel .item {
+    font-size: 0.75em;
+  }
+  .carousel-inner > .item > img {
+
+  }
+  .carousel-caption > h1{
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* Pan Frutta Colors
+-------------------------------------------------- */
+
+body {
+  color: #FF9200;
+  background-color: #FFE1BA;
+}
+
+p {
+  color: #2A1800;
+}
+
+.carousel-caption > p {
+  color: #FFE1BA;
+}
+
+.navbar-inverse {
+  border-color: #FFE1BA;
+  background-color: rgba(255, 146, 0, 1);
+}
+
+.navbar-inverse .navbar-brand {
+  color: #2A1800;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFE1BA;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #FFE1BA;
+  background-color: #FF9200;
+}
+
+.featurette-divider {
+  border-top: 1px solid #FF9200;
+}
+
+.carousel-caption {
+  color: #FFE1BA;
+  text-shadow: -1px 0 #2A1800, 0 1px #2A1800, 1px 0 #2A1800, 0 -1px #2A1800;
+  border: 1px solid #FF9200;
+  background-color: rgba(255, 146, 0, 0.4);
+}
+
+.carousel-indicators li {
+  border: 1px solid #FF9200;
+}
+
+.carousel-indicators .active {
+  background-color: #FF9200;
+}
+
+.carousel-control {
+  color: #FFE1BA;
+}
+
+.text-muted {
+  color: #2A1800;
+}
+
+/* Pan Frutta Fonts
+-------------------------------------------------- */
+body {
+  font-family: 'Merriweather', serif;
+}
+
+body h1, h2{
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+body p{
+  font-family: 'Hind Vadodara', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-weight: bold;
+}
